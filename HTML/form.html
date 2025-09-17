@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Application Form</title>
+  <style>
+    /* Basic page and typography */
+    body {
+      font-family: "Times New Roman", Times, serif;
+      margin: 30px;
+      color: #111;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 12px 0;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    p.lead {
+      margin: 8px 0 24px;
+      max-width: 1100px;
+    }
+
+    /* Form container */
+    .form-wrap {
+      max-width: 1100px;
+    }
+
+    /* Two-column layout: label column and control column */
+    .form-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      grid-row-gap: 12px;
+      grid-column-gap: 18px;
+      align-items: start;
+    }
+
+    label {
+      padding-top: 6px;
+      text-align: left;
+      display: inline-block;
+      font-size: 18px;
+    }
+
+    /* Controls */
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 320px;
+      max-width: 100%;
+      padding: 6px 8px;
+      border: 1px solid #999;
+      border-radius: 3px;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 80px;
+      resize: vertical;
+      font-family: inherit;
+    }
+
+    /* Inline groups (radio / checkboxes) */
+    .inline-group {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 6px;
+    }
+
+    .checkbox-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding-top: 6px;
+    }
+
+    .small {
+      font-size: 15px;
+    }
+
+    .file-row {
+      padding-top: 6px;
+    }
+
+    /* Submit button */
+    .submit-row {
+      grid-column: 1 / -1;
+      margin-top: 18px;
+    }
+
+    input[type="submit"] {
+      padding: 8px 14px;
+      border: 1px solid #777;
+      background: #f7f7f7;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    /* Required star styling */
+    .req { color: #000; font-weight: 600; margin-right: 6px; }
+
+    /* Responsive: stack vertically on narrow screens */
+    @media (max-width: 720px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      label { padding-top: 0; }
+      .submit-row { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-wrap">
+    <h1>APPLICATION FORM</h1>
+    <p class="lead">
+      Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the Job Application Form.
+    </p>
+
+    <form class="form-grid" action="#" method="post" enctype="multipart/form-data" novalidate>
+      <label><span class="req">*</span> Full Name:</label>
+      <div><input type="text" name="fullname" placeholder="Enter your full name" required></div>
+
+      <label><span class="req">*</span> Email:</label>
+      <div><input type="email" name="email" placeholder="Enter your Email" required></div>
+
+      <label><span class="req">*</span> Age:</label>
+      <div><input type="number" name="age" placeholder="Age" min="14" max="120" required></div>
+
+      <label>Which option best describes your current role?</label>
+      <div>
+        <select name="role">
+          <option>Student</option>
+          <option>Employed</option>
+          <option>Self-Employed</option>
+          <option>Unemployed</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <label><span class="req">*</span> Would you like to list references?</label>
+      <div class="inline-group">
+        <label class="small"><input type="radio" name="references" value="yes" required> Yes</label>
+        <label class="small"><input type="radio" name="references" value="no" required> No</label>
+      </div>
+
+      <label>Which position would you like to apply for?</label>
+      <div>
+        <select name="position">
+          <option value="">Select an option</option>
+          <option>Frontend Developer</option>
+          <option>Backend Developer</option>
+          <option>Full Stack Developer</option>
+          <option>Intern</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <label>Which programming languages do you know?</label>
+      <div class="checkbox-list">
+        <label><input type="checkbox" name="lang" value="java"> Java</label>
+        <label><input type="checkbox" name="lang"
