@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Site Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .header-cell, .side-nav-cell, .content-cell {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .header-cell {
+            background-color: #f0c19e;
+            text-align: center;
+            font-weight: bold;
+        }
+        .header-row td {
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+        .side-nav-cell {
+            width: 15%;
+            vertical-align: top;
+        }
+        .content-cell {
+            text-align: center;
+        }
+        .side-nav-cell a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr class="header-row">
+            <td class="header-cell">Logo</td>
+            <td colspan="5" class="header-cell">Web Site Name</td>
+        </tr>
+
+        <tr class="header-row">
+            <td>Home</td>
+            <td>Login</td>
+            <td>Registration</td>
+            <td>Catalogue</td>
+            <td>Cart</td>
+        </tr>
+
+        <tr>
+            <td class="side-nav-cell">
+                <a href="#cse">CSE</a>
+                <a href="#ece">ECE</a>
+                <a href="#eee">EEE</a>
+                <a href="#civil">CIVIL</a>
+            </td>
+            <td colspan="5" class="content-cell">
+                Description of the WebSite
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
