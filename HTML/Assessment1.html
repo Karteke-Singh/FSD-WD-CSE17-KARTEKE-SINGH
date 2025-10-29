@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment 1</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background: url(images.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            
+        }
+        .box{
+            background-color: rgb(103, 180, 174);
+            backdrop-filter: blur(10px);
+            padding: 10px;
+            border-radius: 10px;
+            color:rgb(236, 236, 236);
+        }
+        .box:hover{
+            transform: scale(1.1);
+            transition: transform 0.4s linear;
+        }
+        a:hover{
+            color: rgb(255, 196, 0);
+
+        }
+
+
+        h1{
+            text-align: center;
+        }
+        .header{
+            text-align: center;
+        }
+        table{
+            border: 2px solid black;
+            width: 400px;
+            height: 300px;
+        }
+        table:hover{
+            border-color: brown;
+        }
+        tr
+        {
+            text-align: center;
+        }
+        th{
+            border: 1px solid black;
+            text-align: left;
+        }
+        .link span{
+            font-weight: bold;
+            padding: 3px;
+            font-size: 18px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>
+            Profile Card
+        </h1>
+        <table>
+            <tr>
+                <th colspan="2" style="text-align: center;"> <img src="images.png" </th>
+            </tr>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Karteke Singh
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Role
+                </th>
+                <th>
+                    Student
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Email
+                </th>
+                <th><a href="mailto:kartikeysingh23012004@gmail.com">kartikeysingh23012004@gmail.com</a>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Phone
+                </th>
+                <th>
+                    +91-9305066101
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    About
+                </th>
+                <th>
+                    Enthusiatic learner and researcher in Data Structure, learner in journey of Full Stack developer and passinate about learning new thing.
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2" style="text-align: center;"><a href="https://github.com/Karteke-Singh">Github</a>|<a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">LinkedIn</a>
+                </th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
