@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Survey</title>
+
+    <style>
+        body {
+            background-image: url(download\ \(1\).jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header {
+            background-image: url(download\ \(2\).jpeg);
+            background-repeat: repeat-x;
+            background-size: contain;
+            padding: 20px;
+            font-size: 34px;
+            font-family: Verdana, sans-serif;
+            border-radius: 10px;
+        }
+
+        .survey-box {
+            width: 65%;
+            margin: auto;
+            padding: 25px;
+            background-color: rgba(0,0,0,0.55);
+            border-radius: 15px;
+            border: 3px solid white;
+            font-size: 20px;
+        }
+
+        input, select, textarea {
+            width: 80%;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            margin: 12px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: yellow;
+        }
+
+        a:link { color: cyan; }
+        a:visited { color: orange; }
+        a:hover { 
+            color: lime;
+            background-color: rgba(255,255,255,0.2);
+        }
+        a:active { color: red; }
+
+        .rate-row {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .rate-left input {
+            display: block;
+            margin: 12px 0;
+        }
+
+        .rate-right label {
+            display: block;
+            margin: 12px 0;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        Student Feedback Survey
+    </div>
+
+    <br><br>
+
+    <div class="survey-box">
+        <form>
+
+            <p><b>Student Name</b></p>
+            <input type="text" placeholder="Enter your full name">
+
+            <p><b>Roll Number</b></p>
+            <input type="text" placeholder="Enter roll number">
+
+            <p><b>Branch</b></p>
+            <select>
+                <option selected disabled>Select Branch</option>
+                <option>CSE</option>
+                <option>CSIT</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>ME</option>
+                <option>CE</option>
+            </select>
+
+            <p><b>Year</b></p>
+            <select>
+                <option selected disabled>Select Year</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+
+            <p><b>Rate Overall College Experience</b></p>
+
+            <div class="rate-row">
+                <div class="rate-left">
+                    <input type="radio" name="rate" value="excellent">
+                    <input type="radio" name="rate" value="good">
+                    <input type="radio" name="rate" value="average">
+                    <input type="radio" name="rate" value="poor">
+                </div>
+
+                <div class="rate-right">
+                    <label>Excellent</label>
+                    <label>Good</label>
+                    <label>Average</label>
+                    <label>Poor</label>
+                </div>
+            </div>
+
+            <p><b>Any Suggestions</b></p>
+            <textarea rows="4" placeholder="Write your suggestions here..."></textarea>
+
+            <br><br>
+            <button type="submit">Submit</button>
+
+            <br><br>
+            <a href="home.html">Back to Home</a>
+
+        </form>
+    </div>
+
+</body>
+</html>
